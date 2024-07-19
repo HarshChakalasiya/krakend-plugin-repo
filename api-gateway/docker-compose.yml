@@ -1,0 +1,9 @@
+services:
+  krakend:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${CONTAINER_NAME:-krakend-custom-plugin}
+    ports:
+      - 8080:8080
+    network_mode: host

@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "plugin": {
+      "pattern": ".so",
+      "folder": "./plugins/"
+    },
+    "endpoints": [
+    ],
+    "extra_config": {
+      "plugin/http-server": {
+        "name": ["custom-plugin"],
+        "custom-plugin": {
+          "path": "*"
+        }
+      }
+    }
+  }
+  
